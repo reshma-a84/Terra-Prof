@@ -1,0 +1,5 @@
+name,direction,protocol,cidr_block,port
+rule-01,in,tcp,172.31.0.0/16,443
+rule-02,in,tcp,172.31.0.0/16,80
+rule-03,out,tcp,10.66.0.0/16,8443
+rule-04,out,tcp,10.77.0.0/16,3306
