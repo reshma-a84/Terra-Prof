@@ -1,15 +1,16 @@
+# providers.tf
 terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "5.86.0"
+      version = "6.36.0"
     }
   }
 
   backend "s3" {
-    bucket = "hruhltp-s3-tfstate-bucket"
-    key    = "hands-on/terraform-professional-cert/sensitive"
+    bucket = "tfpro-practice"
     region = "us-east-1"
-
+    key    = "tfstate/Domain-1/moved"
   }
+  required_version = ">= 1.5.0"
 }
